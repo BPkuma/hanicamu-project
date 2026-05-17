@@ -124,6 +124,9 @@
     .ie-table .income-row td:first-child { background: #dce8f0; }
     .ie-table .expense-row td:first-child { background: #f0dce8; }
     .ie-table .balance-row td { background: #1a3a6a !important; color: #fff !important; font-size: 15px; font-weight: bold; }
+    .ie-table .income-row ~ .income-row td:nth-child(2),
+    .ie-table .expense-row ~ .expense-row td:nth-child(2),
+    .ie-table .balance-row td:nth-child(2) { text-align: right; font-weight: bold; color: #1a3a6a; }
     /* Formula box */
     .formula-box {
       background: #f7f9fc;
