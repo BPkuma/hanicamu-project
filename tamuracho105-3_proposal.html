@@ -118,15 +118,15 @@
       font-weight: bold;
     }
     /* Income/Expense table */
-    .ie-table td:first-child { background: #e8eef8; font-weight: bold; width: 80px; }
+    .ie-table tr td { background: #fff; }
+    .ie-table td:first-child { background: #f2f2f2; font-weight: bold; width: 80px; }
     .ie-table td:nth-child(2) { width: 160px; }
-    .ie-table td:nth-child(3) { width: 130px; text-align: right; font-weight: bold; color: #1a3a6a; }
-    .ie-table .income-row td:first-child { background: #dce8f0; }
-    .ie-table .expense-row td:first-child { background: #f0dce8; }
-    .ie-table .balance-row td { background: #1a3a6a !important; color: #fff !important; font-size: 15px; font-weight: bold; }
+    .ie-table td:nth-child(3) { width: 130px; text-align: right; font-weight: bold; }
+    .ie-table .subtotal-row td { background: #e0e0e0 !important; }
+    .ie-table .balance-row td { background: #e0e0e0 !important; font-weight: bold; }
     .ie-table .income-row ~ .income-row td:nth-child(2),
     .ie-table .expense-row ~ .expense-row td:nth-child(2),
-    .ie-table .balance-row td:nth-child(2) { text-align: right; font-weight: bold; color: #1a3a6a; }
+    .ie-table .balance-row td:nth-child(2) { text-align: right; font-weight: bold; }
     /* Formula box */
     .formula-box {
       background: #f7f9fc;
@@ -268,7 +268,7 @@
             <td>40,000円</td>
             <td>売買日が未定のため、概算です</td>
           </tr>
-          <tr class="income-row">
+          <tr class="income-row subtotal-row">
             <td><strong>収入合計（①）</strong></td>
             <td><strong>31,706,600円</strong></td>
             <td></td>
@@ -309,7 +309,7 @@
             <td>4,545,536円</td>
             <td>詳細は後述します</td>
           </tr>
-          <tr class="expense-row">
+          <tr class="expense-row subtotal-row">
             <td><strong>支出合計（②）</strong></td>
             <td><strong>12,253,533円</strong></td>
             <td></td>
